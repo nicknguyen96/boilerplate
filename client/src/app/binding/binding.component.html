@@ -1,0 +1,10 @@
+<p>binding works!</p>
+<form [formGroup]="form">
+    <div class="example-container">
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" formControlName="email" required>
+            <mat-error *ngIf="!form.valid">{{getErrorMessage('email')}}</mat-error>
+        </mat-form-field>
+    </div>
+</form>

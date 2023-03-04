@@ -1,0 +1,21 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [cdkMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <ng-template #menu>
+        <div class="example-menu" cdkMenu>
+            <button class="example-menu-item" cdkMenuItem routerLink="/">
+                Home
+            </button>
+            <button class="example-menu-item" cdkMenuItem routerLink="/binding">
+                Binding
+            </button>
+            <button class="example-menu-item" cdkMenuItem routerLink="/animation">
+                Animation
+            </button>
+        </div>
+    </ng-template>
+    <span routerLink="/">My App</span>
+    <span class="example-spacer"></span>
+
+</mat-toolbar>
